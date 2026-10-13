@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" font-family="Arial,sans-serif" font-size="14">
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#333"/></marker></defs>
+  <rect width="760" height="420" fill="#fff"/>
+  <text x="380" y="24" text-anchor="middle" font-size="18" font-weight="bold">Lab 3 - Component Tree (Todo App)</text>
+
+  <rect x="280" y="45" width="200" height="60" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="380" y="70" text-anchor="middle" font-weight="bold">App</text>
+  <text x="380" y="90" text-anchor="middle" font-size="12">state: tasks | useEffect -> localStorage</text>
+
+  <rect x="90" y="190" width="220" height="60" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="200" y="215" text-anchor="middle" font-weight="bold">AddTaskForm</text>
+  <text x="200" y="235" text-anchor="middle" font-size="12">state: text, error</text>
+
+  <rect x="450" y="190" width="220" height="60" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="560" y="215" text-anchor="middle" font-weight="bold">TaskList</text>
+  <text x="560" y="235" text-anchor="middle" font-size="12">maps tasks -> TaskItem</text>
+
+  <rect x="450" y="330" width="220" height="60" rx="8" fill="#fef3c7" stroke="#d97706"/>
+  <text x="560" y="355" text-anchor="middle" font-weight="bold">TaskItem (many)</text>
+  <text x="560" y="375" text-anchor="middle" font-size="12">checkbox, text, delete</text>
+
+  <line x1="330" y1="105" x2="220" y2="188" stroke="#333" marker-end="url(#a)"/>
+  <line x1="430" y1="105" x2="540" y2="188" stroke="#333" marker-end="url(#a)"/>
+  <line x1="560" y1="250" x2="560" y2="328" stroke="#333" marker-end="url(#a)"/>
+
+  <text x="60" y="150" font-size="12" fill="#333">props: onAdd, existingTasks</text>
+  <text x="530" y="150" font-size="12" fill="#333">props: tasks, onToggle, onDelete</text>
+  <text x="575" y="295" font-size="12" fill="#333">props: task, onToggle, onDelete</text>
+</svg>
